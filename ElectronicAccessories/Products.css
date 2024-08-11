@@ -1,0 +1,32 @@
+#table {
+    font-size: 18pt;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+#bb {
+    border-bottom: 3px solid black;
+    padding: 10px;
+}
+
+.Pimg {
+    width: 300px;
+}
+
+#cart {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#buy {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12pt;
+}
+

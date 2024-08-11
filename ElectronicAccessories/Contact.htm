@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Contact.css">
+
+    <script language="javascript" type="text/javascript">
+
+        function check() {
+            check_name();
+            check_phone();
+            check_email();
+        }
+
+        function check_name() {
+            var a, b, c, d;
+            a = window.document.frm.name.value;
+            b = a.toUpperCase();
+            c = b.charAt(0);
+            if (c >= "A" && c <= "Z") {
+            }
+            else {
+                alert("Incorrect Student Name");
+            }
+
+        }
+
+        function check_phone() {
+            var a, b;
+            a = window.document.frm.phone.value;
+            b = Number(a);
+            if (isNaN(b))
+                alert("Incorrect Phone Number");
+            else {
+                if (b >= 1000000000 && b <= 9999999999) {
+                }
+                else {
+                    alert("Invalid length, Phone Number must be of 10 Digit.");
+                }
+
+            }
+        }
+
+        function check_email() {
+            var a, b, c, d;
+            a = window.document.frm.email.value;
+            d = a.toLowerCase();
+            b = a.indexOf("@");
+            c = a.indexOf("@", b + 1);
+            if (b >= 0 && c == -1) {
+            }
+            else {
+                alert("Incorrect Email");
+            }
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="s1">
+        <table>
+            <tr>
+                <td id="lg">
+                    <a href="Index.htm">
+                        <img src="Images/Logo.png" alt="Electron Logo" id="logo">
+                    </a>
+                </td>
+                <td id="td">
+                    <a id="a" href="Index.htm" target="_blank">Home</a>
+                    <a id="a" href="Products.htm" target="_blank">Products</a>
+                    <a id="a" href="Contact.htm" target="_blank">Contact</a>
+                    <a id="a" href="Login.htm" target="_blank">Login</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contact" id="contact">
+
+        <h1 class="text-center">Contact Us</h1>
+
+        <form action="http://localhost/ElectronicAccessories/Electron/Contact.php" method="post" name="frm">
+
+            Name : <input class="form-input" type="text" name="name" id="name"><br>
+
+            Phone : <input class="form-input" type="text" name="phone" id="phone"><br>
+
+            Email : <input class="form-input" type="email" name="email" id="email"><br>
+
+            Message : <textarea class="form-input" name="msg" id="text" cols="1" rows="5"></textarea><br>
+
+            <input type="submit" id="btn" onclick="check();" value="Submit">
+
+        </form>
+    </div>
+
+
+
+    <br><br>
+    <div id="f">
+        Copyright &copy; www.Electron.com. All rights reserved!
+    </div>
+
+</body>
+
+</html>

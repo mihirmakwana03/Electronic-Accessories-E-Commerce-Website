@@ -1,0 +1,123 @@
+<html>
+
+<head>
+
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Signin.css">
+
+</head>
+
+<body>
+
+    <div id="s1">
+        <table>
+            <tr>
+                <td id="lg">
+                    <a href="Index.htm">
+                        <img src="Images/Logo.png" alt="Electron Logo" id="logo">
+                    </a>
+                </td>
+                <td id="td">
+                    <a id="a" href="Index.htm" target="_blank">Home</a>
+                    <a id="a" href="Products.htm" target="_blank">Products</a>
+                    <a id="a" href="Contact.htm" target="_blank">Contact</a>
+                    <a id="a" href="Login.htm" target="_blank">Login</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <table width="50%" id="table1" cellpadding="5" align="center">
+        <tr id="tr">
+            <th colspan="2">Sign In</th>
+        </tr>
+        <tr id="tr">
+
+            <form action="http://localhost/ElectronicAccessories/Electron/Sign In.php" name="frm1" method="POST">
+
+                <td valign="top">
+                    Name :
+                </td>
+                <td valign="top">
+                    <input type="text" name="txt1" required>
+                </td>
+        </tr>
+        <tr id="tr">
+
+            <td valign="top">
+                Mobile number :
+            </td>
+            <td valign="top">
+                <input type="text" maxlength="10" name="txt2" required>
+            </td>
+        </tr>
+        <tr id="tr">
+
+            <td valign="top">
+                Email(optional) :
+            </td>
+            <td valign="top">
+                <input type="email" name="txt3">
+            </td>
+        </tr>
+        <tr id="tr">
+
+            <td valign="top">
+                Address :
+            </td>
+            <td valign="top">
+                <textarea cols="100" rows="4" name="txt4" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Pincode :</td>
+            <td valign="top" colspan="2">
+                <input type="text" name="txt5" maxlength="6" required>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                District :</td>
+            <td valign="top" colspan="2">
+                <input type="text" name="txt6" required>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                State :</td>
+            <td valign="top" colspan="2">
+                <input type="text" name="txt7" required>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Password :</td>
+            <td valign="top" colspan="2">
+                <input type="password" name="pwd1" id="pwd1" required>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                Confirm Password :</td>
+            <td valign="top" colspan="2">
+                <input type="password" name="pwd2" id="pwd1" required>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td valign="top" align="center">
+                <input type="submit" class="sign" value="Sign In">
+            </td>
+        </tr>
+        </form>
+        </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
