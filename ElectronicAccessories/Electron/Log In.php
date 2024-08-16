@@ -16,7 +16,7 @@ if ($cn) {
     // $verify_password = password_verify($password, $row[7]);
     // $hash_password = password_hash($password, PASSWORD_DEFAULT);
 
-    if (password_verify($password, $row[7])) {
+    if ($row && password_verify($password, $row[7])) {
 
         $_SESSION['name'] = $row[0];
         $_SESSION['mobile_no'] = $row[1];

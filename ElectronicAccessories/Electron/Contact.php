@@ -17,8 +17,8 @@ if ($cn) {
         $result = mysqli_query($cn, $qry);
 
         if ($result) {
-            echo "<script> alert('Details submitted succesfully. We will contact you soon :)'); </script>";
-            // header("Location: http://localhost/ElectronicAccessories/Contact.htm");
+            echo "<script> alert('Details submitted successfully. We will contact you soon :)'); </script>";
+            echo "<script> window.location.href = '../Contact.htm'; </script>";
         } else {
             echo "<script> alert('Error wwhile submitting the details'); </script>";
         }

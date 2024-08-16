@@ -93,7 +93,7 @@ mysqli_close($cn);
     <center>
         <h3>If you are a New user then please Sign In</h3>
         <form action="" name="frm2" method="">
-            <a href="\ElectronicAccessories/Signin.htm" target="_blank"><input type="button" name="signin" value="Sign In"></a>
+            <a href="\ElectronicAccessories/Signin.htm" ><input type="button" name="signin" value="Sign In"></a>
 
         </form>
     </center>
